@@ -226,3 +226,9 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 ```
+
+这里为什么要单独说一下字符串的拷贝呢?
+
+因为字符串是一个特殊的对象，我们应该调用他的copy方法。因为我们对于字符串其实我们是期望他只有一分值得，就看上面的例子：
+
+我们用NSMutableString产生一个name,然后将其赋值给person对象，当我们在外面修改name的内容的时候，其实person的name属性的值也应该修改。所以我们一般在拷贝字符串对象的时候，都会调用他的copy方法
