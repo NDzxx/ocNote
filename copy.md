@@ -62,6 +62,11 @@ int main(int argc, const charchar * argv[]) {
 
 深拷贝：拷贝属性对象的内容
 
+ 1.以后想让自定义的对象能够被copy只需要遵守NSCopying协议  
+ 2.实现协议中的- (id)copyWithZone:(NSZone *)zone  
+ 3.在- (id)copyWithZone:(NSZone *)zone方法中创建一个副本对象
+如例子所示意
+
 person.h
 ```
     //  
