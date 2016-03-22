@@ -15,4 +15,12 @@
 
 @property (参数1,参数2) 类型 名字;  
 
+其中参数主要分为三类：
+
+读写属性： （readwrite/readonly）
+
+setter语意：（assign/retain/copy）--mrc （strong/weak）--arc
+
+原子性： （atomicity/nonatomic）
+
 
