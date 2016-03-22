@@ -9,4 +9,5 @@
    * [@property和@synthesize](property&&synthesize.md)
    * [类目和类扩展](类目和分类.md)
 * [多文件开发](多文件.md)
+* 内存管理
 
