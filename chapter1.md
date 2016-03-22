@@ -1,7 +1,7 @@
 # 类的声明和实现
 
 
-```
+
 @interface Person:Nsobject 声明
 { //大括号中声明成员变量
 }
