@@ -118,3 +118,10 @@ person.m
 @end
 
 ```
+我们看到，Person实现了NSCopying协议，然后需要实现一个方法：copyWithZone
+
+在这个方法中我们开始进行拷贝操作：
+
+Person类中有一个属性类型是数组
+
+这里我们需要生成一个Person对象，然后进行属性的拷贝，最后在返回这个对象
