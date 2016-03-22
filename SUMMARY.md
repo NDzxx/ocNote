@@ -12,5 +12,5 @@
 * [内存管理](内存管理.md)
    * [autorealease Pool](autorealease_pool.md)
    * [对象的拷贝](copy.md)
-* 单例,协议和代理
+* [单例,协议和代理](单例.md)
 
