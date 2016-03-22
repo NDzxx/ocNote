@@ -11,5 +11,5 @@
 * [多文件开发](多文件.md)
 * [内存管理](内存管理.md)
    * [autorealease Pool](autorealease_pool.md)
-   * 对象的拷贝
+   * [对象的拷贝](copy.md)
 
