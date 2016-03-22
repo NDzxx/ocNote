@@ -65,7 +65,7 @@ int main(int argc, const charchar * argv[]) {
  1.以后想让自定义的对象能够被copy只需要遵守NSCopying协议  
  2.实现协议中的- (id)copyWithZone:(NSZone *)zone  
  3.在- (id)copyWithZone:(NSZone *)zone方法中创建一个副本对象
-如例子所示意
+如例子所示意  回去改为深浅各一份
 
 person.h
 ```
