@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * 内存管理
 * [类](chapter1.md)
    * [类方法和对象方法](类方法和对象方法.md)
    * [类的三大特性](封装继承多态.md)
