@@ -1,3 +1,3 @@
 # NSString对象和NSMutableString对象
 
-waitting update
+NSString 类似C++ 的string，是oc的字符串
