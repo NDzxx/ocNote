@@ -181,6 +181,27 @@ Nurse.m
 }  
   
 //触发方法  
+/*第一个参数：键值路径
+
+第二个参数：监听对象
+
+第三个参数：变化的值
+
+第四个参数：传递的内容
+
+我们看到代码中有一个特殊的参数：第三个参数：NSDirctionary类型的
+
+其实我们如果不知道是干什么的，我们可以打印一下他的结果看一下，很简单，这里就不截图说明了
+
+我们会发现他有两个键值对
+
+key是：new和old
+
+他们就是分别代表这个属性值变化的前后值，同时他们的得到也和之前我们添加监听对象时设置的第三个参数有关：
+
+NSKeyValueObservingOptionNew |NSKeyValueObservingOptionOld
+那个地方设置了几种状态，这里的NSDirctionary中就会有几个键值对*/
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(voidvoid *)context{  
     NSLog(@"%@",change);  
     //通过打印change，我们可以看到对应的key  
