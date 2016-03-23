@@ -67,4 +67,20 @@ NSArray *array1 = [[NSArray alloc] initWithObjects:@"zhangsan",@"lis", nil nil];
 [md1 removeObjectsForKeys:array1];//以value删除 
 ```
 
-
+###遍历字典
+```
+    //4.-------------循环遍历字典  
+    //快速遍历  
+    for (NSString *key in md1) {  
+        NSArray *values = [md1 objectForKey:key];  
+        for(NSString *v in values){  
+            NSLog(@"%@",v);  
+        }  
+    }  
+      
+    //普通遍历  
+    NSArray *allKey = [md1 allKeys];  
+    for(int i=0;i<allKey.count;i++){  
+        NSArray *value = [md1 objectForKey:allKey[i]];  
+    }  
+```
