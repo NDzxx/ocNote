@@ -64,3 +64,5 @@ oc归档解档实质就是对象序列化，类似mfc序列化，google的protob
     int value = [unarchiver decodeObjectForKey:@"scope"];  
     NSLog(@"%d",value);  
 ```
+##自定义类型的归档和解档
+自定义的类型可以进行归档和解档的话，必须实现一个协议：NSCoding  
