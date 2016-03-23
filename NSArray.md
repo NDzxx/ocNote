@@ -40,3 +40,13 @@ NSString *str1 = [array1 objectAtIndex:0];
     BOOL isContains = [array1 containsObject:@"zhangsan"];  
 ```
 ###找到一个元素在数组中的下标
+```
+//5.----------------------indexOfObject  
+//返回一个对象在数组中的下标值  
+NSUInteger index = [array1 indexOfObject:@"zhangsan"];  
+if(index == NSNotFound){  
+    //没有找到  
+}else{  
+    //找到了  
+} 
+```
