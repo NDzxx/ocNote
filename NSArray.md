@@ -33,3 +33,10 @@ NSString *str1 = [array1 objectAtIndex:0];
     //获取数组元素中的个数  
     NSUInteger count = [array1 count];//返回的是一个无符号数值  
 ```
+###是否包含某一个元素
+```
+    //4.----------------------containsObject  
+    //判断数组中是否包含某一个对象,判断的是指针对象值，不是对象中的值  
+    BOOL isContains = [array1 containsObject:@"zhangsan"];  
+```
+###找到一个元素在数组中的下标
