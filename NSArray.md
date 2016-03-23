@@ -132,3 +132,27 @@ NSArray类是不可变的，NSMutableArray类是可变的，可变类一样的�
 //在指定的位置上插入特定元素  
 [mArray2 insertObject:@"def" atIndex:0]; 
 ```
+###替换元素
+```
+    //4.---------------------replaceObjectAdIdex  
+    //替换元素  
+    [mArray2 replaceObjectAtIndex:0 withObject:@"aaa"];  
+```
+###互换两个元素的位置
+```
+    //5.---------------------exchangeObjectAtIndex  
+    //互换两个元素的位置  
+    [mArray2 exchangeObjectAtIndex:0 withObjectAtIndex:3];  
+```
+###删除方法
+```
+//6.---------------------removeObjectAdIndex  
+//删除指定位置的元素  
+[mArray2 removeObjectAtIndex:0];  
+//删除最后一个元素  
+[mArray2 removeLastObject];  
+//删除指定的对象  
+[mArray2 removeObject:@"lisi"];  
+//删除所有的对象/清空列表  
+[mArray2 removeAllObjects]; 
+```
