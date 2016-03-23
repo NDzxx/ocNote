@@ -41,4 +41,26 @@ oc归档解档实质就是对象序列化，类似mfc序列化，google的protob
 ```
 多个对象归档的话，这里要用到一个类：NSMutableData和NSData，他们两的区别很简单，一个是可变的，一个是不可变的。然后这里还创建了一个归档器：NSKeyedArchiver,这个类负责进行指定类型的编码操作，然后将数据填充到NSMutableData类。归档的时候对每个类型对象用一个key进行对应，这个NSData和NSDirctionary很类似了。
 ##解档
-
+###单个对象解档
+```
+    //解归档  
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"array.src"];  
+    id array = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];  
+    NSLog(@"%@",array);  
+```
+###对多个对象进行解档操作
+```
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"array.src"];  
+    //读取归档数据  
+    NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];  
+      
+    //创建解归档对象，对data中的数据进行解归档  
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];  
+      
+    //解归档  
+    NSArray *array = [unarchiver decodeObjectForKey:@"array"];  
+    NSLog(@"%@",array);  
+      
+    int value = [unarchiver decodeObjectForKey:@"scope"];  
+    NSLog(@"%d",value);  
+```
