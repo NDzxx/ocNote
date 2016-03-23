@@ -27,3 +27,9 @@ NSArray类(类似C++数组)和NSMutableArray类(类似c++ vector)
 //访问数组中的数据，数组中存放的是对象的指针  
 NSString *str1 = [array1 objectAtIndex:0];
 ```
+###获取数组的大小
+```
+    //3.----------------------count  
+    //获取数组元素中的个数  
+    NSUInteger count = [array1 count];//返回的是一个无符号数值  
+```
