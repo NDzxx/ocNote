@@ -137,3 +137,10 @@ stringnews = [string21 substringWithRange:range];
         //找到了  
     }  
 ```
+###取出字符串中指定的char
+```
+//11.----------------------characterAtIndex  
+//取出字符串中指定的char  
+NSString *string24 = @"abcdef";  
+unichar c = [string24 characterAtIndex:3]; 
+```
