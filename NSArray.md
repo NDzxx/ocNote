@@ -122,6 +122,7 @@ NSArray类是不可变的，NSMutableArray类是可变的，可变类一样的�
 **使用addObjectsFromArray方法是将一个数组中的每个元素添加到指定的数组中**
 
 **使用addObject方法是讲一个数组整个都添加到指定的数组中了，那么这个数组就变成二维数组了**  
+
 运行结果对比  
 ![运行结果](arr.png)
 
