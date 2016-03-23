@@ -178,6 +178,24 @@ int main(int argc, char * argv[]) {
 }
 
 ```
+补充操作方法
+```
+  // 2.判断一个文件是否存在, 并且判断它是否是一个文件夹
+    /*
+    // 注意: 该方法的返回值是说明传入的路径对应的文件或文件夹是否存在
+    //       第二个参数是用于保存判断结果的, 如果是一个目录, 那么就会赋值为YES, 如果不是就赋值为NO
+    BOOL dir = NO;
+    BOOL flag = [manager fileExistsAtPath:@"/Users/xiaomage/Desktop/video/01-NSArray基本概念.mp4" isDirectory:&dir];
+    NSLog(@"flag = %i, dir = %i", flag, dir);
+     */
+     
+     // 4.获取文件夹中所有的文件
+    /*
+    // 注意:contentsOfDirectoryAtPath方法有一个弊端, 只能获取当前文件夹下所有的文件, 不能获取子文件夹下面的文件
+    NSArray *res = [manager contentsOfDirectoryAtPath:@"/Users/xiaomage/Desktop/video" error:nil];
+    NSLog(@"res = %@", res);
+     */
+```
 
 ##NSFileHandle
 这个类主要是对文件进行读写操作的
