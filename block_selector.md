@@ -155,4 +155,43 @@ NSLog(@"%@", [test performSelector:@selector(doublesToString:second:third:) with
 
 ##闭包(block)
 
+block 是一种数据类型，封装代码,本质上就是代码块，类似js的闭包，c++的lamda
+(区别在于是可以自动捕获外部变量的匿名函数) 
+函数不能在方法内部或函数内部，但是block可以   
+作用： 
+Block可以作为函数参数或者函数的返回值，而本身又可以带输入参数或返回值 
+block，在多线程、异步任务，集合遍历，集合排序、动画专场用得多 
 
+定义block类型的变量的格式   
+
+返回值类型 (^block变量名称)(形参列表);
+
+实现格式   
+
+^ 返回值类型 (形参列表){ 语句….. };
+例子：
+```
+ void(^myblock)() = ^ {
+
+        NSLog(@"---------");
+
+        NSLog(@"---------");
+
+    };//经常是这样写，直接带实习，类似lamda
+    
+    //利用block变量调用block内部的代码
+
+    myblock(); //运行block
+    
+    //定以一个block返回值为int函数的参数为int int
+
+   int(^sumblock)(int ,int ) = ^(int a,int b){
+
+       return a + b;
+
+    };
+
+   int sum = sumblock(10,11);
+
+   NSLog(@"sum = %d",sum);
+```
