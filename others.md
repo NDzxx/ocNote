@@ -148,4 +148,22 @@ int main(int argc, const char * argv[]) {
 ```
 ##NSException（异常）
 
-
+```      
+    #import <Foundation/Foundation.h>  
+      
+    int main(int argc, const charchar * argv[]) {  
+        @autoreleasepool {  
+           //捕获异常  
+            @try {  
+                int a = 1/0;  
+            }  
+            @catch (NSException *exception) {  
+                  
+            }  
+            @finally {  
+                  
+            }  
+        }  
+        return 0;  
+    }  
+```
