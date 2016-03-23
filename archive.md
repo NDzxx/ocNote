@@ -6,6 +6,7 @@ oc归档解档实质就是对象序列化，类似mfc序列化，google的protob
     //第一种形式：归档对象  
     //对象----》文件  
      NSArray *array = [NSArray arrayWithObjects:@"zhang",@"wangwu",@"lisi",nil];  
+     //NSHomeDirectory()返回当前用户路径
      NSString *filePath = [NSHomeDirectory()
                            stringByAppendingPathComponent:@"array.src"];  
        
