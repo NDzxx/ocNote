@@ -128,7 +128,7 @@ int main(int argc, const char * argv[]) {
         //下面的方法是从格林时区开始添加和减去一个时区值(格林时区为0)
         //[NSTimeZone timeZoneForSecondsFromGMT:0];
         
-        //通过打印可以得到具体的时区
+        //通过打印可以得到具体的时区   时区值（@“America/New_York”）的获取
         NSArray *array = [NSTimeZone knownTimeZoneNames];//获取所有的时区
         for(NSString *str in array){
             NSLog(@"%@",str);
