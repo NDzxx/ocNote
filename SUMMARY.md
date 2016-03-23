@@ -21,5 +21,5 @@
    * [char * ,char,string与NSString转化(objec-c与c++混编基础)](混编.md)
    * [NSArray类和NSMutableArray类](NSArray.md)
    * [NSDirctionary类以及NSMutableDirctionary类](nsdirctionary.md)
-   * 其他类(NSNumber,NSDate,NSExcetion) 
+   * [其他类(NSNumber,NSDate,NSExcetion)](others.md)
 
