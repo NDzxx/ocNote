@@ -18,3 +18,4 @@ NSLog(@"%@",string1);
 //使用类方法创建字符串
 string1 = [NSString stringWithString:@"hello1"];
 ```
+###比较字符串的值
