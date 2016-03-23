@@ -63,3 +63,16 @@ if(index == NSNotFound){
     //在原来的数组后面追加元素,返回一个新的数组对象，因为他是不可变的  
     NSArray *array3 = [array1 arrayByAddingObject:@"zhaoliu"];  
 ```
+###数组的遍历  
+```
+//数组的遍历  
+for(int i=0;i<array1.count;i++){  
+    NSString *str = [array1 objectAtIndex:i];  
+    NSLog(@"%@",str);  
+}  
+  
+//快速遍历  
+for(NSString *s in array1){  
+    NSLog(@"%@",s);  
+}
+```
