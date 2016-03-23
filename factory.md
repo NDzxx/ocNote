@@ -10,6 +10,7 @@
  1.一定是类方法 +  
  2.方法名称以类的名称开头, 首字母小写  
  3.一定有返回值, 返回值是id/instancetype  
+ person.h
  ```
 #import <Foundation/Foundation.h>
 
@@ -22,3 +23,34 @@
 + (instancetype)personWithAge:(int)age;
 @end
  ```
+ person.m
+ ```
+ 
+#import "Person.h"
+
+@implementation Person
+
+/*
++ (instancetype)person
+{
+    Person *p = [Person alloc];
+    Person *p1 = [p init];
+    return p1;
+}
+ */
++ (instancetype)person
+{
+    return [[Person alloc] init];
+}
+
++ (instancetype)personWithAge:(int)age
+{
+    Person *p = [[Person alloc] init];
+    p.age = age;
+    return p;
+}
+
+@end
+ ```
+ 
+ 
