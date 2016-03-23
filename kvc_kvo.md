@@ -93,3 +93,15 @@ int main(int argc, const charchar * argv[]) {
 KVO操作在OC中也是经常会用到的，而且这种机制在java中不存在的。
 
 它的作用就是用来监听类中属性值的变化，实现原理是观察者模式，当然我们也可以使用观察者模式在Java中实现这样的机制
+children.h
+```      
+    #import <Foundation/Foundation.h>  
+      
+    @interface Children : NSObject  
+      
+    @property NSInteger *hapyValue;  
+    @property NSInteger *hurryValue;  
+      
+      
+    @end  
+```
