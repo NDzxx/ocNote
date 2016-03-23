@@ -147,3 +147,46 @@ NSString *string24 = @"abcdef";
 unichar c = [string24 characterAtIndex:3]; 
 ```
 ##NSMutableString对象
+和NSString类不同的地方  
+###创建方法
+```
+ //1.--------------------创建字符串  
+        //和NSString的创建方法相同  
+        NSMutableString *string1 = [[NSMutableString alloc] initWithString:@"hello"];  
+          
+        //但是不能使用以下方式创建  
+        //因为以下方式创建的字符串是不可变的，其值是放到常量池中的，是不可变得  
+        //NSMutableString *string1 = @"hello";  
+```
+NSMutableString类的创建方式和NSString的创建方式差不多，只是有一点需要注意，NSMutableString不能使用直接方式去创建，因为直接方式创建的字符串都是在常量池中，而常量池中的值都是不可变的，所以不能创建的，同时initWithString创建出来的字符串也是不在常量池中的。这点需要和NSString区分一下
+
+
+###在字符串中插入一个字串
+```
+//2.---------------------insertString
+//在源字符串中指定的index中插入字符串，不会产生新的对象
+[string1 insertString:@"可变" atIndex:0];
+```
+##字符串的追加
+```
+//3.---------------------appendString  
+//和NSString的不同是追加字符串,不会产生新的对象  
+[string1 appendString:@"可变"]; 
+```
+
+##删除字串
+```
+    //4.---------------------deleteCharactersInRange  
+    //删除字符串中指定范围的字串内容  
+    NSMutableString *string2 = [NSMutableString stringWithString:@"hello"];  
+    NSRange range = {1,3};  
+    [string2 deleteCharactersInRange:range];  
+```
+##替换字符串  
+```
+    //5.---------------------replaceCharactersInRange  
+    //替换字符串内容  
+    NSMutableString *string3 = [NSMutableString stringWithString:@"hello"];  
+    NSRange ranges = [string3 rangeOfString:@"ll"];//先查找出需要替换字符串的范围  
+    [string3 replaceCharactersInRange:ranges withString:@"ee"];  
+```
