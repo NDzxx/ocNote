@@ -27,5 +27,5 @@
    * [文件操作详解](wenjian.md)
 * [KVC和KVO](kvc_kvo.md)
 * [通知谓词](通知谓词.md)
-* 代理通知和kvo的不同
+* [代理通知和kvo的不同](diff.md)
 
