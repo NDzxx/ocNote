@@ -14,5 +14,5 @@
    * [对象的拷贝](copy.md)
 * [单例,协议和代理](单例_协议_代理.md)
    * [协议和代理](协议和代理.md)
-   * 闭包和selector
+   * [闭包和selector](block_selector.md)
 
