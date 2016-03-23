@@ -59,6 +59,12 @@ NSArray *array1 = [[NSArray alloc] initWithObjects:@"zhangsan",@"lis", nil nil];
     NSMutableDictionary *md2 = [[NSMutableDictionary alloc] initWithCapacity:3];  
     [md2 addEntriesFromDictionary:md1];  
 ```
-
+###删除元素
+```
+//3.-------------删除元素  
+[md1 removeObjectForKey:@"zhang"];//以key删除  
+[md1 removeAllObjects];//删除所有元素  
+[md1 removeObjectsForKeys:array1];//以value删除 
+```
 
 
