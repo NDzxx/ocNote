@@ -25,6 +25,24 @@ key-value的格式，需要注意的是，结尾是nil
     //2.---------------------获取所有的key  
     NSArray *allKeys = [dict allKeys];  
 ```
+###获取所有元素的value
+```
+//3.---------------------获取所有的value  
+//可能为二维数组  
+NSArray *allValues = [dict allValues]; 
+```
+###通过key获取value
+```
+    //4.---------------------通过key获取value  
+    NSArray *values = [dict objectForKey:@"zhang"];  
+```
+###NSDirctionary的快速创建方式和访问方式
+```
+NSDictionary *dict3 = @{@"zhangsan":array1,@"lisi":array2};  
+NSLog(@"%@",dict3);  
+  
+NSArray *array4 = dict3[@"zhang"]; 
+```
 
 
 
