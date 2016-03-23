@@ -36,13 +36,15 @@ NSArray *allValues = [dict allValues];
     //4.---------------------通过key获取value  
     NSArray *values = [dict objectForKey:@"zhang"];  
 ```
-###NSDirctionary的快速创建方式和访问方式
+###NSDirctionary的快速创建方式和访问方式 (常用)
 ```
 NSDictionary *dict3 = @{@"zhangsan":array1,@"lisi":array2};  
 NSLog(@"%@",dict3);  
   
 NSArray *array4 = dict3[@"zhang"]; 
 ```
+##NSMutableDirctionary类
+
 
 
 
