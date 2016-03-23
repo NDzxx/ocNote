@@ -79,3 +79,5 @@ int main(int argc, charchar * argv[]) {
     }  
 } 
 ```
+##NSFileManager
+这个类的主要功能是对文件进行操作：创建，复制，剪切，删除等
