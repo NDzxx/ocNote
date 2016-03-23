@@ -95,7 +95,7 @@ int main(int argc, char * argv[]) {
         NSString *homePath = NSHomeDirectory();
         //在沙盒目录中创建一个文件file.text
         NSString *filePath = [homePath stringByAppendingPathComponent:@"Documents/file.text"];
-        //NSFileManager是单利模式,所以不能使用alloc+init创建
+        //NSFileManager是单例模式,所以不能使用alloc+init创建
         NSFileManager *manager = [NSFileManager defaultManager];
         NSString *str = @"无线互联";
         NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
