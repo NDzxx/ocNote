@@ -14,7 +14,7 @@ SEL是一种数据类型，代表方法签名，通过它就找到这个对象�
 oc方法在内存中也是使用sel存储的
 ![OC存储方式](sel.png)
 
-常用方法
+###常用方法
 ```
 - (id)performSelector:(SEL)aSelector;
 - (id)performSelector:(SEL)aSelector withObject:(id)object;
@@ -36,7 +36,7 @@ NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
 SEL say_sel = [dic objectForKey:@"say"];
  [self performSelector: say_sel]; 
 ```
-
+###sel多参数方法
 有没有觉得很无语？为什么参数必须是对象？为什么最多只支持2个参数？
 
 好在selector本身也不在乎参数类型，所以传个不是对象的玩意也行：
@@ -153,6 +153,6 @@ NSLog(@"%@", [test performSelector:@selector(doublesToString:second:third:) with
  
 参考文章2：http://blog.csdn.net/libaineu2004/article/details/43733827（原理和总结）  
 
-
+##闭包(block)
 
 
