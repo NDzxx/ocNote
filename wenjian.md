@@ -11,6 +11,7 @@ int main(int argc, const charchar * argv[]) {
         NSString *path = @"/Users/jiangwei/file.text";  
           
         //1.返回路径的组成部分  
+        //返回的一个数组，将路径分割了，但是需要注意的是，第一个是"/"，这个也算是路径的一部分。
         NSArray *array = [path pathComponents];  
         NSLog(@"%@",array);  
           
