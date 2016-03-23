@@ -50,3 +50,11 @@ if(index == NSNotFound){
     //找到了  
 } 
 ```
+###使用指定的连接符连接数组中所有的元素
+```
+    //6.----------------------componentsJoinedByString  
+    //数组中存放的如果是字符串的话，可以使用连接符将其所有的元素进行连接  
+    //注意数组中的元素必须都是字符串  
+    NSString *content = [array1 componentsJoinedByString:@","];  
+```
+###在数组的尾部增加一个元素
