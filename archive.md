@@ -125,3 +125,8 @@ person.m
 @end
 
 ```
+在Person.m文件中，我们需要实现协议中的两个方法：
+
+initWithCoder (解档调用)
+
+encodeWithCoder (归档调用)
