@@ -1,6 +1,8 @@
 # NSString对象和NSMutableString对象
 
+
 NSString 类似C++ 的string，是oc的字符串
+##NSString对象
 ###创建的方法
 ```
 //1.--------------字符串的创建方式
@@ -144,3 +146,4 @@ stringnews = [string21 substringWithRange:range];
 NSString *string24 = @"abcdef";  
 unichar c = [string24 characterAtIndex:3]; 
 ```
+##NSMutableString对象
