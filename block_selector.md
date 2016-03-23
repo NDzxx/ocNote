@@ -256,4 +256,55 @@ block，在多线程、异步任务，集合遍历，集合排序、动画专场
     myBlock();
     NSLog(@"a = %i", a);
      */
+     
+```
+###还可以使用typedef 提高可读性
+```
+#import <Foundation/Foundation.h>
+
+int sum(int value1, int value2)
+{
+    return value1 + value2;
+}
+
+int minus(int value1, int value2)
+{
+    return value1 - value2;
+}
+
+typedef int (*calculte)(int, int);
+
+// 注意: 利用typedef给block起别名, 和指向函数的指针一样, block变量的名称就是别名
+typedef int (^calculteBlock)(int , int);
+
+
+int main(int argc, const char * argv[]) {
+
+    /*
+//    int (*sumP)(int, int);
+//    sumP = sum;
+    calculte sumP = sum;
+    NSLog(@"sum = %i", sumP(20, 10));
+    
+    
+//    int (*minusP)(int, int);
+//    minusP = minus;
+    calculte minusP = minus;
+    NSLog(@"minus = %i", minusP(20, 10));
+       */
+    
+//    int (^sumBlock)(int , int );
+    calculteBlock sumBlock = ^(int value1, int value2){
+        return value1 + value2;
+    };
+    NSLog(@"sum = %i", sumBlock(20, 10));
+    
+//    int (^minusBlock)(int , int);
+    calculteBlock minusBlock = ^(int value1, int value2){
+        return value1 - value2;
+    };
+    NSLog(@"minus = %i", minusBlock(20, 10));
+    return 0;
+}
+
 ```
