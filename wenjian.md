@@ -172,6 +172,7 @@ int main(int argc, char * argv[]) {
 
 ##NSFileHandle
 这个类主要是对文件进行读写操作的
+###读写操作
 ```
 
 #import <UIKit/UIKit.h>
@@ -259,3 +260,5 @@ int main(int argc, char * argv[]) {
     }
 }
 ```
+
+###NSFileHandle的其他操作
