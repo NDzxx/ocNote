@@ -8,7 +8,7 @@
    * [点语法](点语法.md)
    * [@property和@synthesize](property&&synthesize.md)
    * [类目和类扩展](类目和分类.md)
-   * 类工厂方法
+   * [类工厂方法](factory.md)
 * [多文件开发](多文件.md)
 * [内存管理](内存管理.md)
    * [autorealease Pool](autorealease_pool.md)
