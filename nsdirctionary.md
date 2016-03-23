@@ -44,7 +44,14 @@ NSLog(@"%@",dict3);
 NSArray *array4 = dict3[@"zhang"]; 
 ```
 ##NSMutableDirctionary类
+###创建方法
+```
+//1.-------------创建一个可变字典,大小为3  
+NSMutableDictionary *md1 = [[NSMutableDictionary alloc] initWithCapacity:3];  
+NSArray *array1 = [[NSArray alloc] initWithObjects:@"zhangsan",@"lis", nil nil]; 
+```
 
+###
 
 
 
