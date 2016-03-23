@@ -165,6 +165,13 @@ Nurse.m
           
         //观察小孩的hapyValue  
         //使用KVO为_children对象添加一个观察者，用于观察监听hapyValue属性值是否被修改  
+        /*第一个参数：监听者，这里是Nure,所以可以直接传递self
+
+        第二个参数：监听对象的属性名
+
+        第三个参数：监听这个属性的状态：这里可以使用|进行多种组合操作，属性的新值和旧值
+
+        第四个参数：传递内容给监听方法*/
         [_children addObserver:self forKeyPath:@"hapyValue" options:NSKeyValueObservingOptionNew |NSKeyValueObservingOptionOld context:@"context"];  
           
         //观察小孩的hurryValue  
