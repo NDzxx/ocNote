@@ -169,3 +169,6 @@ int main(int argc, char * argv[]) {
 }
 
 ```
+
+##NSFileHandle
+这个类主要是对文件进行读写操作的
