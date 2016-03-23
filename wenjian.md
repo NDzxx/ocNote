@@ -35,6 +35,15 @@ int main(int argc, const charchar * argv[]) {
           
         //6.添加扩展名  
         [path stringByAppendingPathExtension:@".jpg"];  
+        
+        // 7.判断是否是绝对路径
+        // 其实本质就是判断字符串是否以/开头
+        if([path isAbsolutePath])
+        {
+            NSLog(@"是绝对路径");
+        }else{
+            NSLog(@"不是绝对路径");
+        }
           
     }  
     return 0;  
@@ -329,12 +338,7 @@ int main(int argc, charchar * argv[]) {
           
         //这里有问题，就是读取文件的时候全部读取了，这样会很占内存的，所以我们应该将读取内容进行分段  
         //这个就用到了上面说到的读取文件的任意位置的内容
-
-
-
-          
-          
-                                 
+                      
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));  
     }  
 }  
