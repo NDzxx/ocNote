@@ -51,7 +51,14 @@ NSMutableDictionary *md1 = [[NSMutableDictionary alloc] initWithCapacity:3];
 NSArray *array1 = [[NSArray alloc] initWithObjects:@"zhangsan",@"lis", nil nil]; 
 ```
 
-###
+###添加元素
+```
+    //2.-------------添加元素  
+    [md1 setObject:array1 forKey:@"zhang"];  
+      
+    NSMutableDictionary *md2 = [[NSMutableDictionary alloc] initWithCapacity:3];  
+    [md2 addEntriesFromDictionary:md1];  
+```
 
 
 
