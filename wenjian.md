@@ -195,6 +195,7 @@ int main(int argc, char * argv[]) {
     NSArray *res = [manager contentsOfDirectoryAtPath:@"/Users/xiaomage/Desktop/video" error:nil];
     NSLog(@"res = %@", res);
      */
+     //获取文件夹中所以文件大小（含子文件夹）
 ```
 
 ##NSFileHandle
