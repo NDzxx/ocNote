@@ -82,3 +82,6 @@ for(NSString *s in array1){
     NSLog(@"%@",s);  
 }
 ```
+##NSMutableArray类
+
+NSArray类是不可变的，NSMutableArray类是可变的，可变类一样的特性，就是可以进行增删改查操作
