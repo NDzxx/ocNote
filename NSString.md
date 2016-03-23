@@ -64,5 +64,76 @@ if(string13 == string14){
 } 
 ```
 进行创建，==判断是不相等的，所以应该使用isEqualToString判断，就不会出现错误
+###比较两个字符串的大小方法
+```
+//4.---------------------compare方法  
+//比较两个字符串的大小  
+result = [string15 compare:string16];  
+if(result == NSOrderedAscending){  
+    //升序  
+}else if(result == NSOrderedDescending){  
+    //降序  
+} 
+```
+###取字符串的长度的方法
 
+```
+//5.---------------------length方法
+NSString *string17 = @"abc";
+NSInteger len = [string17 length];
+NSLog(@"len=%ld",len);
+```
+###转化字符串的大小写方法
+```
+    //6.---------------------uppercaseString/lowercaseString  
+    //转成大写  
+    NSString *string18 = @"aEc";  
+    NSString *string19 = [string18 uppercaseString];  
+    string19 = [string18 lowercaseString];  
+    //首字符大写,其他的变成小写  
+    [string18 capitalizedString];  
+```
+###数值转化的方法
+```
+//7.---------------------TypeXXXValue
+//数值转化方法
+NSString *string20 = @"3.14";
+float value = [string20 floatValue];
+string20 = @"1";
+BOOL values = [string20 boolValue];
+```
+###字符串的截取方法
+```
+//8.---------------------subStringToIndex/subStringFromIndex/subStringWithRange  
+//字符串的截取  
+NSString *string21 = @"abcdefg";  
+//从开始位置截取到下标为3的字串(不包括3)  
+NSString *stringnews = [string21 substringToIndex:3];  
+//从哪个index开始截取到尾部(包括3)  
+stringnews = [string21 substringFromIndex:3];  
+//截取1~(3+1)部分的字串  
+NSRange range = {1,3};  
+stringnews = [string21 substringWithRange:range]; 
+```
+###字符串的追加方法
+```
+    //9.----------------------stringByAppendingString/stringByAppendingFormat  
+    //字符串的追加  
+    NSString *string22 = @"Android";  
+    NSString *stringnew = [string22 stringByAppendingString:@"IOS"];  
+    stringnew = [string22 stringByAppendingFormat:@"%@",@"IOS"];  
+```
+这里需要注意的是，每次追加完一个字符串之后，是返回一个新的字符串，因为NSString是不可变类。和Java中的String类很类似，如果用+去连接字符串都会重新创建一个字符串对象，Java中可以使用StringBuilder对象去解决这样的问题，在OC中也是有解决的，后面会说到一个可变字符串类
 
+###字符串的查找方法
+```
+    //10.---------------------rangeOfString  
+    //字符串的查找  
+    NSString *string23 = @"www.iphonetrain.com/ios.html";  
+    NSRange rang = [string23 rangeOfString:@"ios"];//返回一个范围  
+    if(rang.location == NSNotFound){  
+        //没找到  
+    }else{  
+        //找到了  
+    }  
+```
