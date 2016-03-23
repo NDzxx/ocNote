@@ -20,6 +20,11 @@ key-value的格式，需要注意的是，结尾是nil
     //存放一个元素  
     NSDictionary *dict2 = [NSDictionary dictionaryWithObject:array1 forKey:@"zhang"];  
 ```
+###获取所有元素的key
+```
+    //2.---------------------获取所有的key  
+    NSArray *allKeys = [dict allKeys];  
+```
 
 
 
