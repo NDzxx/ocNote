@@ -19,3 +19,18 @@ dog.m
   
 @end  
 ```
+person.h  
+```
+#import <Foundation/Foundation.h>  
+#import "Dog.h"  
+  
+@interface Person : NSObject{  
+@private  
+    NSString *_name;  
+    NSDog *_dog;  
+      
+    NSInteger *age;  
+}  
+  
+@end 
+```
