@@ -58,3 +58,8 @@ if(index == NSNotFound){
     NSString *content = [array1 componentsJoinedByString:@","];  
 ```
 ###在数组的尾部增加一个元素
+```
+    //8.----------------------arrayByAddingObject  
+    //在原来的数组后面追加元素,返回一个新的数组对象，因为他是不可变的  
+    NSArray *array3 = [array1 arrayByAddingObject:@"zhaoliu"];  
+```
