@@ -9,8 +9,16 @@
       
     //第一个元素:key:@"zhang" value:array1  
     //第二个元素:key:@"li"  value:array2  
-    NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:array1,@"zhang",array2,@"li", nil nil];  
+    NSDictionary *dict = [[NSDictionary alloc] 
+                           initWithObjectsAndKeys:array1,@"zhang",
+                           array2,@"li", nil nil];  
     NSLog(@"%@",dict);  
+```
+key-value的格式，需要注意的是，结尾是nil
+###添加元素
+```
+    //存放一个元素  
+    NSDictionary *dict2 = [NSDictionary dictionaryWithObject:array1 forKey:@"zhang"];  
 ```
 
 
