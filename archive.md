@@ -130,3 +130,35 @@ person.m
 initWithCoder (解档调用)
 
 encodeWithCoder (归档调用)
+
+main.m
+```
+
+#import <Foundation/Foundation.h>
+
+#import "Person.h"
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        
+        Person *p = [[Person alloc] init];
+        p.name = @"张三";
+        p.age = 20;
+        p.apples = @[@"iphone",@"ipad"];
+        
+        //归档
+        NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"person.archiver"];
+        BOOL success = [NSKeyedArchiver archiveRootObject:p toFile:filePath];
+        if(success){
+            NSLog(@"归档成功");
+        }
+        
+        //解归档
+        Person *person = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
+        NSLog(@"%@",person);
+        
+        
+    }
+    return 0;
+}
+
+```
