@@ -17,5 +17,5 @@
    * [协议和代理](协议和代理.md)
    * [闭包和selector](block_selector.md)
 * [Foundation框架](NSString对象和NSMutableString对象 .md)
-   * NSString对象和NSMutableString对象 
+   * [NSString对象和NSMutableString对象](NSString.md)
 
