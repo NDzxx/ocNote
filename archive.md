@@ -66,3 +66,19 @@ oc归档解档实质就是对象序列化，类似mfc序列化，google的protob
 ```
 ##自定义类型的归档和解档
 自定义的类型可以进行归档和解档的话，必须实现一个协议：NSCoding  
+看例子  
+person.h
+```
+#import <Foundation/Foundation.h>  
+  
+//类只有实现NSCoding协议才能归档  
+@interface Person : NSObject<NSCoding>  
+  
+@property(nonatomic,copy)NSString *name;  
+@property(nonatomic,assign)NSInteger age;  
+@property(nonatomic,retain)NSArray *apples;  
+  
+- (NSString *)description;  
+  
+@end
+```
