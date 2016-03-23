@@ -100,3 +100,6 @@ NSArray类是不可变的，NSMutableArray类是可变的，可变类一样的�
     //使用类方法创建  
     NSMutableArray *mArray3 = [NSMutableArray arrayWithCapacity:5];  
 ```
+创建方式和NSArray类似，但是有一种方式不能用，就是直接创建的方式，那个只能用于创建不变数组。
+
+但是可变数组还有一个方法就是能够事先的设置数组的大小，而且超过这个大小之后，数组会自动扩充，类似于vector的实现。
