@@ -328,7 +328,10 @@ int main(int argc, charchar * argv[]) {
         [writeHandles closeFile];  
           
         //这里有问题，就是读取文件的时候全部读取了，这样会很占内存的，所以我们应该将读取内容进行分段  
-          
+        //这个就用到了上面说到的读取文件的任意位置的内容
+
+
+
           
           
                                  
