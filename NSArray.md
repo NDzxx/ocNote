@@ -21,6 +21,12 @@ NSArray类(类似C++数组)和NSMutableArray类(类似c++ vector)
         //创建一个数组，将源数组中的数据拿出来放进去  
         NSArray *array2 = [NSArray arrayWithArray:array1];  
 ```
+Xcode4.4之后新增了NSArray快速创建的一种方式
+```
+    //xcode4.4以后，编译器对数组的创建和访问语法做了优化  
+    NSArray *array7 = @[s1,s2,s3];  
+    NSString *s = array7[0];  
+```
 ###使用下标访问元素
 ```
 //2.----------------------objectAtIndex  
