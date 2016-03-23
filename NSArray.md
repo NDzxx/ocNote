@@ -85,3 +85,18 @@ for(NSString *s in array1){
 ##NSMutableArray类
 
 NSArray类是不可变的，NSMutableArray类是可变的，可变类一样的特性，就是可以进行增删改查操作
+```
+    //1.---------------------创建可变数组  
+    NSString *str1 = @"zhangsan";  
+    NSString *str2 = @"lisi";  
+    NSString *str3 = @"wangwu";  
+    NSMutableArray *mArray1 = [[NSMutableArray alloc] initWithObjects:str1,str2,str3, nil nil];  
+    //下面的这种方式创建的数组是错误的  
+    //下面的这种方式是创建不可变数组的方式，不能用于可变数组的创建  
+    //NSMutableArray *array1 = @[str1,str2,str3];  
+      
+    //先开辟5个空间，用于存储元素，当存储的元素超过了5个，数组会自动增大空间  
+    NSMutableArray *mArray2 = [[NSMutableArray alloc] initWithCapacity:5];  
+    //使用类方法创建  
+    NSMutableArray *mArray3 = [NSMutableArray arrayWithCapacity:5];  
+```
