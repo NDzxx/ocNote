@@ -146,3 +146,6 @@ int main(int argc, const char * argv[]) {
 }
 
 ```
+##NSException（异常）
+
+
