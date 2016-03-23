@@ -123,7 +123,7 @@ children.m
 }  
   
 - (void) timerAction:(NSTimer *) timer{  
-    //使用set方法修改属性值，才能触发KVO  
+    //使用kvc set方法修改属性值，才能触发KVO  
       
     int value = _hapyValue;  
     [self setHapyValue:--value];  
@@ -134,4 +134,19 @@ children.m
   
   
 @end  
+```
+
+Nure.h
+```
+      
+    #import <Foundation/Foundation.h>  
+      
+    @class Children;  
+    @interface Nure : NSObject{  
+        Children *_children;  
+    }  
+      
+    - (id) initWithChildren:(Children *)children;  
+      
+    @end  
 ```
