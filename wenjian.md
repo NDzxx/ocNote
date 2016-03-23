@@ -40,3 +40,12 @@ int main(int argc, const charchar * argv[]) {
     return 0;  
 }
 ```
+##沙盒文件
+
+在IOS中，每个应用程序都是一个沙盒，他们有自己的文件目录，这个目录对其他程序是不可见的，和Android中的/data/data/包名/中的内容差不多，当然IOS中的沙盒目录有三种：
+
+Documents：存放长期使用的文件(一般存放目录)
+
+Library：系统存放文件
+
+tmp：临时文件，app重启时，该目录下得文件清空
